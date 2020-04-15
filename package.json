@@ -1,26 +1,18 @@
 {
-  "name": "@n8tb1t/use-scroll-position",
-  "version": "1.0.43",
-  "author": "n8tb1t <n8tb1t@gmail.com>",
+  "name": "use-scroll",
+  "version": "1.0.0",
+  "author": "Leon Sting",
   "license": "MIT",
-  "description": "Use scroll position ReactJS hook done right",
+  "description": "Use scroll with ReactJS hook",
   "keywords": [
     "react",
     "hooks",
     "react-hooks",
     "scroll",
-    "scroll-position",
-    "use-scroll-position",
-    "useScrollPosition"
+    "scroll",
+    "use-scroll",
+    "useScroll"
   ],
-  "homepage": "https://github.com/n8tb1t/use-scroll-position#readme",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/n8tb1t/use-scroll-position.git"
-  },
-  "bugs": {
-    "url": "https://github.com/n8tb1t/use-scroll-position/issues"
-  },
   "publishConfig": {
     "access": "public"
   },

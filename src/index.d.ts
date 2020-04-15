@@ -13,8 +13,8 @@ interface ScrollProps {
 
 export declare function useScrollPosition(
   effect: (props: ScrollProps) => void,
+  selector?: string,
   deps?: DependencyList,
   element?: MutableRefObject<HTMLElement | null>,
-  useWindow?: boolean,
   wait?: number
 ): void;

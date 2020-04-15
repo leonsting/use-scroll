@@ -2,14 +2,14 @@
   "name": "navbar-demo",
   "version": "0.0.1",
   "main": "index.js",
-  "author": "n8tb1t <n8tb1t@gmail.com>",
+  "author": "leonsting",
   "license": "MIT",
   "scripts": {
     "start": "gatsby develop",
     "build": "gatsby build"
   },
   "dependencies": {
-    "@n8tb1t/use-scroll-position": "^1.0.29",
+    "use-scroll": "^1.0.0",
     "chance": "^1.0.18",
     "gatsby": "^2.10.5",
     "gatsby-plugin-styled-components": "^3.1.0",
