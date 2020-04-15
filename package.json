@@ -1,9 +1,16 @@
 {
   "name": "use-scroll",
   "version": "1.0.0",
-  "author": "Leon Sting",
+  "author": {
+    "name": "NNTUAN"
+  },
   "license": "MIT",
   "description": "Use scroll with ReactJS hook",
+  "homepage": "github.com/leonsting/use-scroll",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leonsting/use-scroll.git"
+  },
   "keywords": [
     "react",
     "hooks",
