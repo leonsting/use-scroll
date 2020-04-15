@@ -11,7 +11,7 @@ interface ScrollProps {
   }
 }
 
-export declare function useScrollPosition(
+export declare function useScroll(
   effect: (props: ScrollProps) => void,
   selector?: string,
   deps?: DependencyList,
