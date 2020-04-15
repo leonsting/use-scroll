@@ -1,5 +1,4 @@
-/* eslint-disable react-hooks/exhaustive-deps */
-import { useRef, useLayoutEffect } from 'react';
+import { useRef, useLayoutEffect, useEffect } from 'react';
 
 const isBrowser = typeof window !== 'undefined';
 
@@ -19,6 +18,7 @@ function getScrollPosition({ element, scrollSelector }) {
 export function useScroll (effect, selector, deps, element, wait){
     const scrollSelector = selector ? document.querySelector(selector) : window;
     const position = useRef(getScrollPosition({ scrollSelector }));
+    const useIsomorphicLayoutEffect = isBrowser ? useLayoutEffect : useEffect
 
     let throttleTimeout = null;
 
@@ -28,7 +28,7 @@ export function useScroll (effect, selector, deps, element, wait){
         position.current = currPos;
         throttleTimeout = null;
     };
-    useLayoutEffect(() => {
+    useIsomorphicLayoutEffect(() => {
         if (!isBrowser) {
             return;
         }
