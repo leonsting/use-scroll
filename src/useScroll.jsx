@@ -17,7 +17,7 @@ function getScrollPosition({ element, scrollSelector }) {
         : { x: window.scrollX, y: window.scrollY };
 }
 
-const useScroll = (effect, selector, deps, element, wait) => {
+export function useScroll (effect, selector, deps, element, wait){
     const scrollSelector = selector ? document.querySelector(selector) : window;
     const position = useRef(getScrollPosition({ scrollSelector }));
 
@@ -53,5 +53,3 @@ useScroll.defaultProps = {
     element: false,
     wait: null,
 };
-
-export default useScroll;
